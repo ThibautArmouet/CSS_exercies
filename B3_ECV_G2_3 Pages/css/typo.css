@@ -1,0 +1,51 @@
+h1{
+font-family: 'Indie Flower', cursive;
+font-size: 1em;
+text-align: center;
+color: #ffff;
+}
+
+/*smartphone moblile (portrait)*/
+@media (max-width: 480px){
+
+}
+
+/*low resolution tablet, mobile (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+  h1 .hero_des .hero_title{
+font-family: 'Montserrat', sans-serif
+font-size: 3em;
+text-align: center;
+color: #ffff;
+  }
+}
+
+/*tablet, ipad (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1{
+font-family: 'Indie Flower', cursive;
+font-size: 5em;
+text-align: center;
+color: #000;
+  }
+}
+
+/*laptops, destktop*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  h1{
+font-family: 'Indie Flower', cursive;
+font-size: 7em;
+text-align: center;
+    color: #000;
+  }
+}
+
+/*laptops, higher destktop résolution */
+@media (min-width: 1281px)  {
+  h1{
+font-family: 'Indie Flower', cursive;
+font-size: 15em;
+text-align: center;
+    color: #000
+  }
+}

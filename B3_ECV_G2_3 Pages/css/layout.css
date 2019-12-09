@@ -1,0 +1,42 @@
+
+
+body{
+  background: white;
+}
+
+/*smartphone moblile (portrait)*/
+@media (max-width: 480px){
+
+}
+header{
+  min-height: 20%;
+}
+/*low resolution tablet, mobile (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+  body{
+    background: green;
+  }
+}
+
+/*tablet, ipad (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  body{
+    background: yellow;
+  }
+}
+
+/*laptops, destktop*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body{
+    background:#fff;
+    color: #000;
+  }
+}
+
+/*laptops, higher destktop résolution */
+@media (min-width: 1281px)  {
+  body{
+    background: white;
+    color: #;
+  }
+}

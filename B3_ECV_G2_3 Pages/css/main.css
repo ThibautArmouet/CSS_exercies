@@ -1,0 +1,271 @@
+header {
+  overflow: hidden;
+  height: 6em;
+
+}
+
+
+nav ul {
+  display: flex;
+  float: right;
+  margin:50px;
+}
+
+nav a {
+  font-family: 'Montserrat', sans-serif;
+  padding: 1em;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #000;
+
+
+
+}
+
+/*laptops, destktop*/
+@media (min-width: 1025px) {
+  nav ul {
+    display: block;
+    float: right;`
+
+  }
+  nav li {
+    display: inline-block;
+
+
+  }
+}
+
+#logo{
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin: 20px;
+}
+
+.hero{
+
+  height: 500px;
+  background-image: url("/css/images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.hero_des{
+  width: 53%;
+  text-align: center;
+
+  margin: auto;
+  font-family: 'Montserrat';
+  font-weight: bold;
+
+  color: #fff;
+}
+.hero_title{
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font-family: helvetica;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px;
+  color: #fff;
+}
+
+
+.main-content{
+
+  column-count: 3;
+  column-gap: 40px;
+  margin-top: 100px;
+  line-height:22px ;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin-left: 42px;
+  margin-right: 42px;
+}
+
+.span{
+  column-span: all;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Poppins;
+  padding: 12px;
+}
+
+.gorille2{
+
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+
+.description{
+  position: relative;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.bouton1{
+
+  float: right;
+  margin-bottom: 2em;
+  margin-right:1em;
+
+  width: 8em;
+  height:3em;
+  border-radius: 5px;
+  border-color:#000;
+  background: #FFFF;
+  color:#000;
+
+}
+
+.flex{
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+}
+
+.Contour2{
+  flex-basis: 320px;
+  flex-grow: 1;
+  padding: 1em;
+  border-radius: 25px;
+  margin: 100px 15px 32px 15px;
+
+
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.05);
+}
+
+.gorillesCARD{
+
+
+
+  float: left;
+  margin-top: 100PX;
+  margin-right: 24px;
+  margin-left: 42px;
+
+}
+
+.description2{
+  text-align: center;
+  margin-top:15px;
+  margin-right: 50px;
+  margin-left: 200px;
+  font-size: 16px;
+  line-height:22px ;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.description3{
+
+  text-align: center;
+  margin-top:15px;
+  margin-right: 50px;
+  margin-left: 200px;
+  font-size: 16px;
+  line-height:22px ;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.Titre3{
+
+  text-align: center;
+  margin-top:200px;
+  margin-right: 50px;
+  margin-left: 200px;
+  font-size: 32px;
+  line-height:22px ;
+  font-weight: bold;
+  font-family: helvetica;
+
+}
+
+footer{
+  height: 240px;
+  width: 100%;
+  background-color: #242625;
+  margin-top: 20px;
+}
+
+.imagesinge{
+  float: left;
+  width: 50%;
+  height: 500px;
+  margin-right: 20px;
+  background-image: url("/images/my/my-gorilla01-ConvertImage.jpg");
+}
+
+.link{
+
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+padding: 15%;
+color: #000;
+
+}
+
+.titre_card{
+font-family: helvetica;
+font-weight: bold;
+font-size: 24px;
+  padding: 10px;
+}
+
+.list_img{
+width: 100%;
+height: 200px;
+margin-bottom: 50px;
+background-image: url("/css/images/hero.jpg")
+
+}
+
+.title_footer{
+font-size: 24px;
+text-align: left;
+padding-top:30px;
+padding-left: 18px;
+font-family: helvetica;
+font-weight: bold;
+color: #FFF;
+}
+
+.text_footer{
+font-size: 16px;
+margin: 20px;
+text-align: : left;
+font-family: 'Montserrat', sans-serif;
+color: #FFF;
+}
+
+.nav-footer{
+
+font-family: 'Montserrat', sans-serif;
+float: left;
+color: #fff;
+}
+
+.section2{
+
+  font-family: 'Montserrat' , sans-serif;
+  margin:  16% 32px 24px 32px;
+  line-height: 24px;
+
+}
