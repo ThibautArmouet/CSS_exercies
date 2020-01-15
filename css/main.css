@@ -26,7 +26,7 @@ nav a {
   color: #000;
 }
 .nav-footer{
-display: block;
+  display: block;
 
 
 }
@@ -317,14 +317,14 @@ footer{
 }
 
 .photo_footer{
-width: 31%;
-height: auto;
-transform: rotate(47deg);
-position: absolute;
-left: -16.5%;
-top: 25%;
-box-shadow: 3px 3px 10px 0 rgba(0,0,0,.15);
-border: 7px solid #FFF;
+  width: 31%;
+  height: auto;
+  transform: rotate(47deg);
+  position: absolute;
+  left: -16.5%;
+  top: 25%;
+  box-shadow: 3px 3px 10px 0 rgba(0,0,0,.15);
+  border: 7px solid #FFF;
 }
 
 .text_footer{
@@ -498,9 +498,8 @@ border: 7px solid #FFF;
 
 .flexsinge2grid{
   display: grid;
- grid-template-columns: repeat(2, 1fr);
-
- grid-auto-rows: minmax(49vw, auto);
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(49vw, auto);
 }
 
 .imagesingegrid{
@@ -519,9 +518,9 @@ border: 7px solid #FFF;
 }
 
 .Titre3grid{
-font-size: 32px;
-font-weight:bold;
-padding: 14px;
+  font-size: 32px;
+  font-weight:bold;
+  padding: 14px;
 }
 
 .section2grid{
@@ -535,9 +534,9 @@ padding: 14px;
 
   .flexsinge2grid{
     display: grid;
-   grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 
-   grid-auto-rows: minmax(49vw, auto);
+    grid-auto-rows: minmax(49vw, auto);
   }
 
   .imagesingegrid{
@@ -556,15 +555,15 @@ padding: 14px;
   }
 
   .Titre3grid{
-  font-size: 32px;
-  font-weight:bold;
-  padding: 14px;
+    font-size: 32px;
+    font-weight:bold;
+    padding: 14px;
   }
 
   .section2grid{
     margin: 16px 16px 16px 16px;
     font-family: helvetica;
     line-height: 20px;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
