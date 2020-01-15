@@ -20,7 +20,9 @@ nav a {
 
   text-decoration: none;
   color: #000;
-
+}
+.nav-footer{
+display: block;
 
 
 }
@@ -231,6 +233,9 @@ nav a {
 footer{
   height: 240px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
   background-color: #242625;
   margin-top: 20px;
 }
@@ -330,9 +335,11 @@ footer{
 }
 
 .nav-footer{
-
+  text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  float: left;
+  font-size: 16px;
+  margin:15px;
+  margin-left: 6px;
   color: #fff;
 }
 
