@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>CSSMONKEYS</title>
+  <link rel="stylesheet" href="css/vendor/reset.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat&display=swap" rel="stylesheet">
   <title>Des Gorilles et du CSS</title>
@@ -10,21 +11,36 @@
 <body>
 
   <header>
-    <img src="/css/images/logo.jpg" alt="logo apes are cool" id="logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="page2.html">LIST</a></li>
-        <li><a href="#">PROBICIS</a></li>
+    <img src="css/images/logo.jpg" alt="logo apes are cool" id="logo">
+    <a href="#main-menu" class="menu-toggle">
+    <div class="burger-breads">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </a>
+  <nav id="main-menu" class="main-menu">
+    <a href="#main-menu-toggle" class="menu-close">
+      <div class="burger-breads close">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </a>
+    <ul>
+      <li><a href="index.html">ACCUEIL</a></li>
+      <li><a href="page2.html">GALERIE</a></li>
+      <li><a href="page3.html">PROBISCIS</a></li>
       </ul>
     </nav>
+    <a href="#main-menu-toggle" class="backdrop" hidden></a>
   </header>
 
 
 
   <div class="hero">
-    <div class=".hero_desc">
-      <h2 class="hero_title">Les Gorilles aux services du CSS</h2>
+    <div class="block-hero-container">
+      <h2 class="hero_title">Les Gorilles Au Service du CSS</h2>
       <p class="hero_des"> Ce site ne parlant que de grands singes cache dans son antre un répertoire CSS de plusieurs technologies qui permettront de devenir un expert.</p>
     </div>
   </div>
@@ -85,8 +101,7 @@ La classification moderne dans laquelle l'homme n'est plus isolé dans une famil
 
           </p>
 
-          <a href="#"><button type="button" name="button" class="bouton1"> Read more</button>
-          </a>
+          <a href="#"  class="bouton1"> Read more </a>
         </div>
 
         <div class="Contour2">

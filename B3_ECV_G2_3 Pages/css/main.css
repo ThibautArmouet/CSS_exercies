@@ -1,20 +1,23 @@
 header {
   overflow: hidden;
   height: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 }
 
 
 nav ul {
-  display: flex;
-  float: right;
+
+
   margin:50px;
 }
 
 nav a {
   font-family: 'Montserrat', sans-serif;
   padding: 1em;
-  border-radius: 6px;
+
   text-decoration: none;
   color: #000;
 
@@ -38,37 +41,37 @@ nav a {
 
 #logo{
   width: 70px;
-  height: 70px;
+  height: auto;
   float: left;
   margin: 20px;
 }
 
 .hero{
-
-  height: 500px;
-  background-image: url("/css/images/hero.jpg");
+  width: auto;
+  min-height: 60vh;
+  background-image: url("images/hero.jpg");
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100%;
-
-display: flex;
+  background-size: cover;
+  display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 
 .hero_des{
-  width: 53%;
+  width: 100%;
+  height:auto;
   text-align: center;
-
   margin: auto;
   font-family: 'Montserrat';
   font-weight: bold;
-
   color: #fff;
 }
+
 .hero_title{
-  width: 50%;
+  width: 100%;
+  height: auto;
   text-align: center;
   margin: auto;
   font-family: helvetica;
@@ -78,24 +81,42 @@ display: flex;
   color: #fff;
 }
 
+@media (min-width: 481px) and (max-width: 1024px){
 
-.main-content{
+  .main-content{
 
-  column-count: 3;
-  column-gap: 40px;
-  margin-top: 100px;
-  line-height:22px ;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  margin-left: 42px;
-  margin-right: 42px;
+    column-count: 2;
+    column-gap: 40px;
+    margin-top: 25px;
+    line-height:22px ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-left: 42px;
+    margin-right: 42px;
+  }
+
 }
+@media (min-width: 1025px) and (max-width: 1940px){
+
+  .main-content{
+
+    column-count: 3;
+    column-gap: 40px;
+    margin-top: 100px;
+    line-height:22px ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-left: 42px;
+    margin-right: 42px;
+  }
+}
+
 
 .span{
   column-span: all;
   font-size: 24px;
-  font-weight: bold;
-  font-family: Poppins;
+  font-weight: bolder;
+  font-family: 'helvetica';
   padding: 12px;
 }
 
@@ -117,18 +138,37 @@ display: flex;
 }
 
 .bouton1{
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: buttonface;
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 11px system-ui;
+  padding: 1px 7px 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  border-image: initial;
+
 
   float: right;
-  margin-bottom: 2em;
-  margin-right:1em;
-
-  width: 8em;
-  height:3em;
+  min-width: 8em;
+  line-height: 3em;
   border-radius: 5px;
   border-color:#000;
   background: #FFFF;
   color:#000;
-
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
 }
 
 .flex{
@@ -146,9 +186,9 @@ display: flex;
   padding: 1em;
   border-radius: 25px;
   margin: 100px 15px 32px 15px;
-
-
   box-shadow: 0 0 10px 0 rgba(0,0,0,.05);
+  position: relative;
+  padding-bottom: 3em;
 }
 
 .gorillesCARD{
@@ -164,9 +204,6 @@ display: flex;
 
 .description2{
   text-align: center;
-  margin-top:15px;
-  margin-right: 50px;
-  margin-left: 200px;
   font-size: 16px;
   line-height:22px ;
   font-family: 'Montserrat', sans-serif;
@@ -176,9 +213,6 @@ display: flex;
 .description3{
 
   text-align: center;
-  margin-top:15px;
-  margin-right: 50px;
-  margin-left: 200px;
   font-size: 16px;
   line-height:22px ;
   font-family: 'Montserrat', sans-serif;
@@ -187,9 +221,6 @@ display: flex;
 .Titre3{
 
   text-align: center;
-  margin-top:200px;
-  margin-right: 50px;
-  margin-left: 200px;
   font-size: 32px;
   line-height:22px ;
   font-weight: bold;
@@ -204,68 +235,238 @@ footer{
   margin-top: 20px;
 }
 
-.imagesinge{
-  float: left;
-  width: 50%;
-  height: 500px;
-  margin-right: 20px;
-  background-image: url("/images/my/my-gorilla01-ConvertImage.jpg");
+
+.flexsinge2{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+.enfantdes{
+  margin-top: 34px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 49.5%;
+  flex-shrink: 2;
+}
+
+.enfantimage{
+  flex-basis: 49.5%;
+  flex-shrink: 1;
+}
+
+.imagesinge{
+
+  object-fit: cover;
+  object-position: right;
+  width:49vw;
+  height: 100vh;
+
+
+}
+@media (max-width: 600px){
+
+  .flexsinge2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .enfantimage{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 49vw;
+  }
+
+  .imagesinge{
+    width:100%;
+    height: auto;
+  }
+
+}
 .link{
 
-text-decoration: none;
-font-family: 'Montserrat', sans-serif;
-font-size: 16px;
-padding: 15%;
-color: #000;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #000;
 
 }
 
 .titre_card{
-font-family: helvetica;
-font-weight: bold;
-font-size: 24px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 24px;
   padding: 10px;
 }
 
 .list_img{
-width: 100%;
-height: 200px;
-margin-bottom: 50px;
-background-image: url("/css/images/hero.jpg")
+  width: 100%;
+  height: 200px;
+  margin-bottom: 50px;
+  background-image: url("images/hero.jpg")
 
 }
 
 .title_footer{
-font-size: 24px;
-text-align: left;
-padding-top:30px;
-padding-left: 18px;
-font-family: helvetica;
-font-weight: bold;
-color: #FFF;
+  font-size: 24px;
+  text-align: left;
+  padding-top:30px;
+  padding-left: 18px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: #000;
 }
 
 .text_footer{
-font-size: 16px;
-margin: 20px;
-text-align: : left;
-font-family: 'Montserrat', sans-serif;
-color: #FFF;
+  font-size: 16px;
+  margin: 20px;
+  text-align: : left;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF;
 }
 
 .nav-footer{
 
-font-family: 'Montserrat', sans-serif;
-float: left;
-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  float: left;
+  color: #fff;
 }
 
 .section2{
 
   font-family: 'Montserrat' , sans-serif;
-  margin:  16% 32px 24px 32px;
+  padding: 24px 24px;
   line-height: 24px;
 
+}
+
+@media (max-width: 1024px){
+  .menu-toggle .burger-breads span{
+
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    z-index: 1;
+  }
+
+  .menu-close .burger-breads span{
+
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 3px;
+    z-index: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #000;
+  }
+  /**/
+  .menu-close .burger-breads span:nth-child(2){
+
+    transform: rotate(135deg) translate(-6px, 9px);
+  }
+
+  .menu-close .burger-breads span:nth-child(3){
+    opacity: 0;
+  }
+  /* Style */
+  .menu-toggle {
+    display: inline-block;
+    padding: 1em;
+  }
+  .main-menu {
+    position: absolute;
+    top: 0;
+    bottom:0;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: visible;
+    transition: 0.3s ease, box-shadow 0.3s ease;
+    z-index: 999;
+  }
+  .main-menu ul {
+    margin: 0;
+    padding: 2.5em 0 0;
+    min-height: 100%;
+    width: 200px;
+    background: #FFF;
+    opacity: 0.90;
+  }
+  .main-menu a {
+    display: block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size:1em;
+    color: #000;
+    font-family: helvetica;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+  }
+  .main-menu li:first-child a {
+    border-top: 1px solid #000;
+  }
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: #F2F2F2;
+    text-decoration: underline;
+  }
+  .main-menu .menu-close {
+    position: absolute;
+    right: 0;
+    top:0;
+    border-bottom: 1px solid transparent;
+  }
+
+  .main-menu{
+
+    transform: translateX();
+    right: -200px;
+  }
+
+  .main-menu:target{
+    display: block;
+    right: 0;
+    outline: none;
+    box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+  }
+
+  .main-menu:target .menu-close{
+    z-index: 1001;
+  }
+
+  .main-menu:target ul{
+    position: relative;
+    z-index: 1000;
+  }
+
+  .main-menu:target +.backdrop{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #000;
+    background: #F2F2F2;
+    opacity: 0.25;
+    cursor: default;
+  }
+
+  @supports (position:fixed) {
+
+    .main-menu,
+    .main-menu:target + .backdrop{
+      position: fixed;
+    }
+
+  }
 }
