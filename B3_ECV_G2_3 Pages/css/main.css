@@ -311,16 +311,29 @@ footer{
   padding-top:30px;
   padding-left: 18px;
   font-family: helvetica;
-  font-weight: bold;
+  font-weight: bolder;
   text-transform: uppercase;
   color: #333333;
 }
 
+.photo_footer{
+width: 31%;
+height: auto;
+transform: rotate(47deg);
+position: absolute;
+left: -16.5%;
+top: 25%;
+border: 7px solid #FFF;
+}
+
 .text_footer{
   font-size: 16px;
-  margin: 20px;
+  margin: 10px;
+  margin-left: 20px;
   text-align: : left;
-  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: helvetica, sans-serif;
   color: #333333;
 }
 
@@ -343,6 +356,7 @@ footer{
 .demi-FOOTER{
   height: 350px;
   width: 50%;
+  position: relative;
   float: right;
   position: relative;
   background-color: #FFFF;
