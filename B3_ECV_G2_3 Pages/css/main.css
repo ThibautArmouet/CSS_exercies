@@ -4,9 +4,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #FFFF;
 
 }
 
+body{
+  background-color: #F2F2F2;
+}
 
 nav ul {
 
@@ -150,23 +154,17 @@ display: block;
   text-align: center;
   align-items: flex-start;
   cursor: default;
-  background-color: buttonface;
+  background-color:#F2F2F2;
   box-sizing: border-box;
   margin: 0em;
   font: 400 11px system-ui;
   padding: 1px 7px 2px;
   border-width: 1px;
-  border-style: solid;
-  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
-  border-image: initial;
-
-
+  border-image: initial;Ò
   float: right;
   min-width: 8em;
   line-height: 3em;
   border-radius: 5px;
-  border-color:#000;
-  background: #FFFF;
   color:#000;
   position: absolute;
   bottom: 1em;
@@ -187,6 +185,7 @@ display: block;
   margin: 100px 15px 32px 15px;
   box-shadow: 0 0 10px 0 rgba(0,0,0,.05);
   position: relative;
+
   padding-bottom: 3em;
 }
 
@@ -299,12 +298,10 @@ display: block;
 
 /*FOOTER*/
 footer{
-  height: 240px;
+  height: 350px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  background-color: #242625;
+  box-shadow: 3px 0 12px rgba(0, 0, 0, 0.15);
+  background-color:#cecda4;
   margin-top: 20px;
 }
 
@@ -315,7 +312,8 @@ footer{
   padding-left: 18px;
   font-family: helvetica;
   font-weight: bold;
-  color: #000;
+  text-transform: uppercase;
+  color: #333333;
 }
 
 .text_footer{
@@ -323,7 +321,7 @@ footer{
   margin: 20px;
   text-align: : left;
   font-family: 'Montserrat', sans-serif;
-  color: #FFF;
+  color: #333333;
 }
 
 .nav-footer{
@@ -332,7 +330,7 @@ footer{
   font-size: 16px;
   margin:15px;
   margin-left: 6px;
-  color: #fff;
+  color: #333333;
 }
 
 .section2{
@@ -340,6 +338,15 @@ footer{
   font-family: 'Montserrat' , sans-serif;
   padding: 24px 24px;
   line-height: 24px;
+}
+
+.demi-FOOTER{
+  height: 350px;
+  width: 50%;
+  float: right;
+  position: relative;
+  background-color: #FFFF;
+
 }
 /*FINFOOTER*/
 
