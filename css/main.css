@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
 @keyframes float {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.07);
@@ -136,32 +138,19 @@ animation: float 6s ease-in-out infinite;
   height: auto;
   text-align: center;
   margin: auto;
-  font-family: helvetica;
-  font-size: 32px;
+  font-family: 'Oswald';
+  font-size: 4em;
   font-weight: bold;
   padding: 20px;
   color: #fff;
 }
 
-@media (min-width: 481px) and (max-width: 1024px){
+
+
 
   .main-content{
 
-    column-count: 2;
-    column-gap: 40px;
-    margin-top: 25px;
-    line-height:22px ;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    margin-left: 42px;
-    margin-right: 42px;
-  }
-
-}
-@media (min-width: 1025px) and (max-width: 1940px){
-
-  .main-content{
-
+		column-width: 200px ;
     column-count: 3;
     column-gap: 40px;
     margin-top: 100px;
@@ -171,14 +160,14 @@ animation: float 6s ease-in-out infinite;
     margin-left: 42px;
     margin-right: 42px;
   }
-}
+
 
 
 .span{
   column-span: all;
   font-size: 24px;
   font-weight: bolder;
-  font-family: 'helvetica';
+  font-family: 'Oswald';
   padding: 12px;
 }
 
@@ -214,7 +203,7 @@ animation: float 6s ease-in-out infinite;
   align-items: flex-start;
 	margin: 0em;
   font: 400 12px;
-	font-family: helvetica ;
+	font-family: 'Oswald' ;
 	font-weight: lighter;
   border-width: 1px;
   border-image: initial;Ò
@@ -275,6 +264,7 @@ animation: float 6s ease-in-out infinite;
 
 .description2{
 
+		padding: 5px;
   text-align: center;
   font-size: 16px;
   line-height:22px ;
@@ -284,7 +274,7 @@ animation: float 6s ease-in-out infinite;
 
 .description3{
 
-
+	padding: 5px;
   text-align: center;
   font-size: 16px;
   line-height:22px ;
@@ -292,11 +282,11 @@ animation: float 6s ease-in-out infinite;
 
 }
 .Titre3{
-  text-align: center;
+	padding: 5px;
   font-size: 32px;
   line-height:22px ;
   font-weight: bold;
-  font-family: helvetica;
+  font-family: 'Oswald';
 
 }
 
@@ -328,7 +318,12 @@ animation: float 6s ease-in-out infinite;
   width:49vw;
   height: 100vh;
 }
-
+.imagesinge2{
+  object-fit: cover;
+  object-position:center;
+  width:49vw;
+  height: 100vh;
+}
 
 
 @media (max-width: 600px){
@@ -338,14 +333,6 @@ animation: float 6s ease-in-out infinite;
     justify-content: space-around;
     flex-direction: column;
   }
-
-
-
-
-
-
-
-
 
   .enfantimage{
     display: flex;
@@ -358,6 +345,10 @@ animation: float 6s ease-in-out infinite;
     width:100%;
     height: auto;
   }
+	.imagesinge2{
+		width:100%;
+		height: auto;
+	}
 
 }
 
@@ -365,14 +356,15 @@ animation: float 6s ease-in-out infinite;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+	padding: 5px;
   color: #000;
 }
 
 .titre_card{
-  font-family: helvetica;
+  font-family: 'Oswald';
   font-weight: bold;
 	text-transform: uppercase;
-	text-align: center;
+
   font-size: 24px;
   padding: 10px;
 }
@@ -398,7 +390,7 @@ footer{
   text-align: left;
   padding-top:30px;
   padding-left: 18px;
-  font-family: helvetica;
+  font-family: 'Oswald';
   font-weight: bolder;
   text-transform: uppercase;
   color: #333333;
@@ -416,13 +408,13 @@ footer{
 }
 
 .text_footer{
-  font-size: 16px;
-  margin: 10px;
+  font-size: 14px;
+  margin-right: 0px;
   margin-left: 20px;
   text-align: : left;
   text-transform: uppercase;
-  font-weight: bold;
-  font-family: helvetica, sans-serif;
+
+  font-family: 'Oswald', sans-serif;
   color: #333333;
 }
 
@@ -516,7 +508,7 @@ footer{
     line-height: 1em;
     font-size:1em;
     color: #000;
-    font-family: helvetica;
+    font-family: 'Oswald';
     text-decoration: none;
     border-bottom: 1px solid #000;
   }
@@ -602,7 +594,7 @@ footer{
 .enfantdesgrid{
 
   text-align: center;
-  font-family: helvetica;
+  font-family:  'Montserrat';
   line-height: 24px;
   align-self: center;
 }
@@ -611,11 +603,12 @@ footer{
   font-size: 32px;
   font-weight:bold;
   padding: 14px;
+	font-family: 'Oswald'
 }
 
 .section2grid{
   margin: 24px 24px 24px 24px;
-  font-family: helvetica;
+  font-family: 'Montserrat';
   line-height: 20px;
   font-size: 18px;
 }
@@ -639,7 +632,7 @@ footer{
   .enfantdesgrid{
 
     text-align: center;
-    font-family: helvetica;
+    font-family:  'Montserrat';
     line-height: 24px;
 
   }
@@ -652,8 +645,18 @@ footer{
 
   .section2grid{
     margin: 16px 16px 16px 16px;
-    font-family: helvetica;
+    font-family: 'Montserrat';
     line-height: 20px;
     font-size: 16px;
   }
+}
+
+.titre_orang_outant{
+
+margin-top: 40px;
+text-transform: uppercase;
+font-size: 24px;
+letter-spacing: 1px;
+font-family: 'Oswald'
+
 }
