@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.07);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.08);
+		transform: translatey(-10px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.09);
+		transform: translatey(0px);
+	}
+}
+
 header {
   overflow: hidden;
   height: 6em;
@@ -9,7 +26,7 @@ header {
 }
 
 body{
-  background-color: #F2F2F2;
+  background-color: #FFF;
 }
 
 nav ul {
@@ -24,18 +41,56 @@ nav a {
 
   text-decoration: none;
   color: #000;
+  color: #333;
+
 }
+/*underline nav*/
+.underline{
+  text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+  -webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+  padding: 15px;
+  padding-bottom: 5px;
+}
+
+.underline:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	background-color: #cecda4;
+	width: 0;
+	left: 50%;
+	bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.underline:hover {
+	color: #cecda4;
+}
+.underline:hover:after {
+	width: 80%;
+}
+/*fin underline nav*/
+
+
 .nav-footer{
   display: block;
 
 
 }
 
+
 /*laptops, destktop*/
 @media (min-width: 1025px) {
   nav ul {
     display: block;
-    float: right;`
+    float: right;
 
   }
   nav li {
@@ -50,12 +105,15 @@ nav a {
   height: auto;
   float: left;
   margin: 20px;
+animation: float 6s ease-in-out infinite;
 }
+
+
 
 .hero{
   width: auto;
   min-height: 60vh;
-  background-image: url("images/hero.jpg");
+
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,32 +138,19 @@ nav a {
   height: auto;
   text-align: center;
   margin: auto;
-  font-family: helvetica;
-  font-size: 32px;
+  font-family: 'Oswald';
+  font-size: 4em;
   font-weight: bold;
   padding: 20px;
   color: #fff;
 }
 
-@media (min-width: 481px) and (max-width: 1024px){
+
+
 
   .main-content{
 
-    column-count: 2;
-    column-gap: 40px;
-    margin-top: 25px;
-    line-height:22px ;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    margin-left: 42px;
-    margin-right: 42px;
-  }
-
-}
-@media (min-width: 1025px) and (max-width: 1940px){
-
-  .main-content{
-
+		column-width: 200px ;
     column-count: 3;
     column-gap: 40px;
     margin-top: 100px;
@@ -115,19 +160,20 @@ nav a {
     margin-left: 42px;
     margin-right: 42px;
   }
-}
+
 
 
 .span{
   column-span: all;
   font-size: 24px;
   font-weight: bolder;
-  font-family: 'helvetica';
+  font-family: 'Oswald';
   padding: 12px;
 }
 
 .gorille2{
 
+  border-radius: 25PX 25PX 15PX 15PX;
   width: 100%;
   height: auto;
   float: left;
@@ -137,6 +183,8 @@ nav a {
 
 
 .description{
+
+  padding: 1em;
   position: relative;
   font-family: 'Montserrat';
   font-size: 14px;
@@ -153,22 +201,40 @@ nav a {
   display: inline-block;
   text-align: center;
   align-items: flex-start;
-  cursor: default;
-  background-color:#F2F2F2;
-  box-sizing: border-box;
-  margin: 0em;
-  font: 400 11px system-ui;
-  padding: 1px 7px 2px;
+	margin: 0em;
+  font: 400 12px;
+	font-family: 'Oswald' ;
+	font-weight: lighter;
   border-width: 1px;
   border-image: initial;Ò
   float: right;
   min-width: 8em;
-  line-height: 3em;
-  border-radius: 5px;
+	text-decoration: none;
   color:#000;
   position: absolute;
-  bottom: 1em;
-  right: 1em;
+	right: 16px;
+  bottom: 16px;
+  transition : all 0.5s ease;
+	border: 1px solid #cecda4;
+	font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #cecda4;
+  padding: 12px 18px;
+  cursor: pointer;
+	line-height: .95;
+  background: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+.bouton1:hover{
+
+  transform: scale(0.97);
+  box-shadow: 0 0 10px 0 rgba(0,0,2,0.1);
+	background: #ABAA89;
+	border: 1px solid #ABAA89;
+	 color: #FFFF;
 }
 
 .flex{
@@ -180,7 +246,6 @@ nav a {
 .Contour2{
   flex-basis: 320px;
   flex-grow: 1;
-  padding: 1em;
   border-radius: 25px;
   margin: 100px 15px 32px 15px;
   box-shadow: 0 0 10px 0 rgba(0,0,0,.05);
@@ -198,6 +263,8 @@ nav a {
 }
 
 .description2{
+
+		padding: 5px;
   text-align: center;
   font-size: 16px;
   line-height:22px ;
@@ -207,6 +274,7 @@ nav a {
 
 .description3{
 
+	padding: 5px;
   text-align: center;
   font-size: 16px;
   line-height:22px ;
@@ -214,11 +282,11 @@ nav a {
 
 }
 .Titre3{
-  text-align: center;
+	padding: 5px;
   font-size: 32px;
   line-height:22px ;
   font-weight: bold;
-  font-family: helvetica;
+  font-family: 'Oswald';
 
 }
 
@@ -250,7 +318,12 @@ nav a {
   width:49vw;
   height: 100vh;
 }
-
+.imagesinge2{
+  object-fit: cover;
+  object-position:center;
+  width:49vw;
+  height: 100vh;
+}
 
 
 @media (max-width: 600px){
@@ -272,6 +345,10 @@ nav a {
     width:100%;
     height: auto;
   }
+	.imagesinge2{
+		width:100%;
+		height: auto;
+	}
 
 }
 
@@ -279,12 +356,15 @@ nav a {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+	padding: 5px;
   color: #000;
 }
 
 .titre_card{
-  font-family: helvetica;
+  font-family: 'Oswald';
   font-weight: bold;
+	text-transform: uppercase;
+
   font-size: 24px;
   padding: 10px;
 }
@@ -310,31 +390,31 @@ footer{
   text-align: left;
   padding-top:30px;
   padding-left: 18px;
-  font-family: helvetica;
+  font-family: 'Oswald';
   font-weight: bolder;
   text-transform: uppercase;
   color: #333333;
 }
 
 .photo_footer{
-  width: 31%;
+  width: 23%;
   height: auto;
-  transform: rotate(47deg);
+  transform: rotate(45deg);
   position: absolute;
-  left: -16.5%;
+  left: -12.3%;
   top: 25%;
   box-shadow: 3px 3px 10px 0 rgba(0,0,0,.15);
   border: 7px solid #FFF;
 }
 
 .text_footer{
-  font-size: 16px;
-  margin: 10px;
+  font-size: 14px;
+  margin-right: 0px;
   margin-left: 20px;
   text-align: : left;
   text-transform: uppercase;
-  font-weight: bold;
-  font-family: helvetica, sans-serif;
+
+  font-family: 'Oswald', sans-serif;
   color: #333333;
 }
 
@@ -428,7 +508,7 @@ footer{
     line-height: 1em;
     font-size:1em;
     color: #000;
-    font-family: helvetica;
+    font-family: 'Oswald';
     text-decoration: none;
     border-bottom: 1px solid #000;
   }
@@ -437,8 +517,8 @@ footer{
   }
   .main-menu a:hover,
   .main-menu a:focus {
-    background: #F2F2F2;
-    text-decoration: underline;
+
+    text-decoration: none;
   }
   .main-menu .menu-close {
     position: absolute;
@@ -459,6 +539,8 @@ footer{
     outline: none;
     box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
   }
+
+
 
   .main-menu:target .menu-close{
     z-index: 1001;
@@ -512,7 +594,7 @@ footer{
 .enfantdesgrid{
 
   text-align: center;
-  font-family: helvetica;
+  font-family:  'Montserrat';
   line-height: 24px;
   align-self: center;
 }
@@ -521,11 +603,12 @@ footer{
   font-size: 32px;
   font-weight:bold;
   padding: 14px;
+	font-family: 'Oswald'
 }
 
 .section2grid{
   margin: 24px 24px 24px 24px;
-  font-family: helvetica;
+  font-family: 'Montserrat';
   line-height: 20px;
   font-size: 18px;
 }
@@ -549,7 +632,7 @@ footer{
   .enfantdesgrid{
 
     text-align: center;
-    font-family: helvetica;
+    font-family:  'Montserrat';
     line-height: 24px;
 
   }
@@ -562,8 +645,18 @@ footer{
 
   .section2grid{
     margin: 16px 16px 16px 16px;
-    font-family: helvetica;
+    font-family: 'Montserrat';
     line-height: 20px;
     font-size: 16px;
   }
+}
+
+.titre_orang_outant{
+
+margin-top: 40px;
+text-transform: uppercase;
+font-size: 24px;
+letter-spacing: 1px;
+font-family: 'Oswald'
+
 }
