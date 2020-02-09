@@ -13,30 +13,33 @@ header{
 }
 /*low resolution tablet, mobile (landscape)*/
 @media (min-width: 481px) and (max-width: 767px) {
-  body{
-    background: green;
-  }
+  .hero{
+    background-image: url("images/hero3.jpg");
+
+    }
 }
 
 /*tablet, ipad (landscape)*/
 @media (min-width: 768px) and (max-width: 1024px) {
-  body{
-    background: yellow;
-  }
+  .hero{
+    background-image: url("images/hero.jpeg");
+
+    }
 }
 
 /*laptops, destktop*/
 @media (min-width: 1025px) and (max-width: 1280px) {
-  body{
-    background:#fff;
-    color: #000;
-  }
+  .hero{
+    background-image: url("images/hero2.jpg");
+    object-fit: cover;
+
+    }
 }
 
 /*laptops, higher destktop résolution */
 @media (min-width: 1281px)  {
-  body{
-    background: white;
-    color: #;
+.hero{
+  background-image: url("images/hero.jpg");
+
   }
 }
