@@ -408,6 +408,8 @@ footer{
 }
 
 .text_footer{
+	line-height: 18px;
+	margin-top: 5px;
   font-size: 14px;
   margin-right: 0px;
   margin-left: 20px;
